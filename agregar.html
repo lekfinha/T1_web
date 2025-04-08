@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Actividad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <!-- Mismo menú que index.html -->
+        </nav>
+
+        <main class="main-content">
+            <h1>Informar Nueva Actividad</h1>
+            <form id="actividad-form">
+                <!-- Sección Dónde -->
+                <fieldset>
+                    <legend>¿Dónde?</legend>
+                    <div>
+                        <label for="region">Región:</label>
+                        <select id="region" required></select>
+                    </div>
+                    <div>
+                        <label for="comuna">Comuna:</label>
+                        <select id="comuna" required></select>
+                    </div>
+                    <div>
+                        <label for="sector">Sector (opcional):</label>
+                        <input type="text" id="sector" maxlength="100">
+                    </div>
+                </fieldset>
+
+                <!-- Sección Organizador -->
+                <fieldset>
+                    <legend>¿Quién organiza?</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" maxlength="200">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="celular">Celular (opcional):</label>
+                        <input type="tel" id="celular" placeholder="+569.12345678">
+                    </div>
+                    <div>
+                        <label for="contacto-red">Contactar por:</label>
+                        <select id="contacto-red">
+                            <option value="">Seleccione...</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="telegram">Telegram</option>
+                            <!-- Otras opciones -->
+                        </select>
+                    </div>
+                    <div id="contacto-info-group" style="display:none;">
+                        <input type="text" id="contacto-info" placeholder="ID o URL">
+                    </div>
+                </fieldset>
+
+                <!-- Sección Actividad -->
+                <fieldset>
+                    <legend>¿Cuándo y de qué trata?</legend>
+                    <div>
+                        <label for="inicio">Inicio:</label>
+                        <input type="datetime-local" id="inicio">
+                    </div>
+                    <div>
+                        <label for="termino">Término (opcional):</label>
+                        <input type="datetime-local" id="termino">
+                    </div>
+                    <div>
+                        <label for="descripcion">Descripción (opcional):</label>
+                        <textarea id="descripcion" cols="50" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label for="tema">Tema:</label>
+                        <select id="tema">
+                            <option value="música">Música</option>
+                            <!-- Todas las opciones requeridas -->
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div id="otro-tema-group" style="display:none;">
+                        <input type="text" id="otro-tema" placeholder="Especificar tema">
+                    </div>
+                    <div>
+                        <label>Fotos (1-5):</label>
+                        <div id="foto-container">
+                            <div class="foto-input">
+                                <input type="file" name="foto1" accept="image/*">
+                            </div>
+                        </div>
+                        <button id="agregar-foto">Agregar otra foto</button>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Agregar esta actividad</button>
+            </form>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

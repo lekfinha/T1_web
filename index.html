@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SocialAct - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Menú Lateral -->
-        <nav class="sidebar">
-            <h2>Bienvenido</h2>
+        <nav class="sidebar" aria-label="Menú principal">
+            <h2>SocialAct</h2>
             <ul>
-                <li><a href="#">Agregar Actividad</a></li>
-                <li><a href="#">Ver Listado de Actividades</a></li>
-                <li><a href="#">Estadísticas</a></li>
+                <li><a href="agregar.html">Agregar Actividad</a></li>
+                <li><a href="listado.html">Ver Listado</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
             </ul>
         </nav>
 
-        <!-- Contenido Central -->
         <main class="main-content">
             <h1>Últimas Actividades</h1>
             <table>
@@ -39,25 +37,40 @@
                         <td>Santiago</td>
                         <td>Beauchef 850, terraza</td>
                         <td>Escuela de Boxeo</td>
-                        <td><img src="https://via.placeholder.com/50" alt="Escuela de Boxeo"></td>
+                        <td><img src="img/boxeo.jpg" alt="Clase de boxeo" class="thumbnail"></td>
                     </tr>
                     <tr>
                         <td>2025-03-29 19:00</td>
                         <td>2025-03-29 20:00</td>
                         <td>Ñuñoa</td>
-                        <td>Plaza</td>
-                        <td>Cómo deshidratar fruta</td>
-                        <td><img src="https://via.placeholder.com/50" alt="Deshidratar fruta"></td>
+                        <td>Plaza Central</td>
+                        <td>Deshidratación de frutas</td>
+                        <td><img src="img/frutas.jpg" alt="Taller de frutas" class="thumbnail"></td>
                     </tr>
                     <tr>
-                        <td>2022-03-30 18:00</td>
-                        <td>2022-03-30 20:00</td>
-                        <td>Santiago</td>
-                        <td>Parque O'Higgins</td>
-                        <td>Música urbana</td>
-                        <td><img src="https://via.placeholder.com/50" alt="Música urbana"></td>
+                        <td>2025-04-01 10:00</td>
+                        <td>-</td>
+                        <td>Providencia</td>
+                        <td>Parque Bustamante</td>
+                        <td>Taller de jardinería</td>
+                        <td><img src="img/jardineria.jpg" alt="Taller de plantas" class="thumbnail"></td>
                     </tr>
-                    <!-- Más filas según sea necesario -->
+                    <tr>
+                        <td>2025-04-02 18:00</td>
+                        <td>2025-04-02 21:00</td>
+                        <td>Las Condes</td>
+                        <td>Centro Cultural</td>
+                        <td>Concierto de jazz</td>
+                        <td><img src="img/musica.jpg" alt="Evento musical" class="thumbnail"></td>
+                    </tr>
+                    <tr>
+                        <td>2025-04-03 16:00</td>
+                        <td>2025-04-03 18:00</td>
+                        <td>Maipú</td>
+                        <td>Plaza Mayor</td>
+                        <td>Clase de zumba</td>
+                        <td><img src="img/zumba.jpg" alt="Clase de ejercicio" class="thumbnail"></td>
+                    </tr>
                 </tbody>
             </table>
         </main>
