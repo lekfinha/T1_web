@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Dispositivos y Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form id="contacto-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h1>Formulario de Dispositivo</h1>
+    <form id="dispositivo-form">
+        <label for="nombre-dispositivo">Nombre del dispositivo:</label>
+        <input type="text" id="nombre-dispositivo" name="nombre-dispositivo" required><br><br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" required><br><br>
+
+        <button type="submit">Agregar Dispositivo</button>
+    </form>
+
+    <h1>Resumen de Dispositivos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="window.location.href='detalles.html?id=1'">
+                <td><img src="img/dispositivo1.jpg" alt="Dispositivo 1" width="50"></td>
+                <td>Dispositivo 1</td>
+                <td>Descripción del dispositivo 1</td>
+                <td><button>Ver Detalles</button></td>
+            </tr>
+            <tr onclick="window.location.href='detalles.html?id=2'">
+                <td><img src="img/dispositivo2.jpg" alt="Dispositivo 2" width="50"></td>
+                <td>Dispositivo 2</td>
+                <td>Descripción del dispositivo 2</td>
+                <td><button>Ver Detalles</button></td>
+            </tr>
+            <!-- Agregar más filas según sea necesario -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
