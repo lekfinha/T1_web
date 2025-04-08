@@ -167,6 +167,13 @@
         padding: 0.8rem;
         font-size: 1rem;
     }
+    #actividad-form input:valid:not(:placeholder-shown) {
+        border-color: #28a745;
+    }
+    
+    #actividad-form input:invalid:not(:placeholder-shown) {
+        border-color: #dc3545;
+    }
 }
 
 @media (max-width: 480px) {
