@@ -1,4 +1,4 @@
-# Proyecto de Gestión de Dispositivos
+# Tarea 1 Web
 
 Este proyecto consiste en una aplicación web que permite gestionar actividades recreativas y dispositivos. El proyecto está desarrollado utilizando HTML, CSS y JavaScript.
 
